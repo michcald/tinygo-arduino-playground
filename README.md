@@ -1,5 +1,7 @@
 # TinyGo with Arduino Playground
 
+This is just a repo for me to mess around with TinyGo and Arduino.
+
 ## Setup
 
 - Make sure you have TinyGo installed under `/user/local/lib/tinygo`
