@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
-      GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ github.token }}
     steps:
       - name: Repo Checkout
         uses: actions/checkout@v2
       - name: Semantic Release
         run: |
-          docker run --rm -v "${PWD}":/app michcald/semantic-release
+          docker run --rm -e GITHUB_TOKEN=${GITHUB_TOKEN} -v "${PWD}":/app michcald/semantic-release
