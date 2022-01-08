@@ -1,5 +1,6 @@
 prepare:
 	cp .ops/go.mod go.mod
+	# create empty go.mod files in the TinyGo source
 	sudo ./.ops/local-fix.sh
 	go mod tidy
 
