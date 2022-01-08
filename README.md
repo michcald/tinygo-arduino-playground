@@ -2,6 +2,10 @@
 
 This is just a repo for me to mess around with TinyGo and Arduino.
 
+## Requirements
+
+- Linux (I am using Ubuntu 20.04, but I think any major Linux distro should work)
+
 ## Setup
 
 - Make sure you have TinyGo installed under `/user/local/lib/tinygo`
